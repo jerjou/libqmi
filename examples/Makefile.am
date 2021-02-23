@@ -1,2 +1,2 @@
 
-SUBDIRS = simple-tester-python
+SUBDIRS = simple-tester-python async-python

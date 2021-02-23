@@ -1,0 +1,14 @@
+An example of abstracting glib-style callbacks into asyncio method calls.
+
+`qmi_obj.py` provides a base class that uses dynamic attributes to turn glib
+method calls into a regular method call on a python object. It provides a sample
+subclass `SmsClient` that further abstracts a sample of sms operations to be
+more python-esque.
+
+`qmi_async.py` uses the classes defined in `qmi_obj.py` to create a command-line
+client.
+
+Note that the program requires libqmi-glib to be installed in the system
+and the introspection typelibs available in the standard paths.
+
+Have fun!
